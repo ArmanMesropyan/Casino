@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Casino/static/css/main.1807cd55.css",
+    "main.js": "/Casino/static/js/main.08b3819f.js",
+    "static/media/diagram.png": "/Casino/static/media/diagram.4f4372e6bd192b569559.png",
+    "static/media/earth.png": "/Casino/static/media/earth.17bfefad0d22e7f81117.png",
+    "static/media/bw.jpg": "/Casino/static/media/bw.cd9b41d82aa9267e331b.jpg",
+    "index.html": "/Casino/index.html",
+    "main.1807cd55.css.map": "/Casino/static/css/main.1807cd55.css.map",
+    "main.08b3819f.js.map": "/Casino/static/js/main.08b3819f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1807cd55.css",
+    "static/js/main.08b3819f.js"
+  ]
+}
