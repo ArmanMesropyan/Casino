@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Content from './components/content/content';
+import Header from './components/header/header';
+import Nav from './components/nav/nav';
+import SideBar from './components/sideBar/sideBar';
 
 function App() {
+ const [barState , setBarState] = useState()
+const barClick = () =>{
+  setBarState(!barState)
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header barClick={barClick}/>
+       <Nav/>
+       <Content/>
+      <div className='side__Bar'>
+      {barState ?  <SideBar/> : null}
+      </div>
+      
     </div>
   );
 }

@@ -1,0 +1,239 @@
+.diagram{
+    width: 100%;
+    display: flex;
+  
+  
+    
+    .diagram__child{
+        padding: 20px 0;
+        width: 40%;
+        background-color: #171717;
+        &:nth-child(1){
+            overflow: hidden;
+            .diagram__background{
+                overflow: hidden;
+                img{
+                    overflow: hidden;
+                }
+            }
+        }
+        &:nth-child(2){
+            width: 20%;
+            background-color: #222222;
+            
+            .diagram__background{
+                position: relative;
+                img{
+                    width:60%;
+                    margin-left: 55px;
+                   
+                }
+                p{   top: 50%;  
+                    left: 50%; 
+                    transform: translate(-50%, -50%);
+                    font-weight: bolder;
+                    font-size: 52px;
+                    color: white;
+                    position: absolute;
+                }
+            }
+        }
+        &:nth-child(3){
+            width: 40%;
+            background-color: #171717;
+            
+            .diagram__background{
+                margin: 25px;
+                img{
+                    width:65%;
+                    margin-left: 80px;
+                   
+                }}}
+        .diagram__title{
+            display: flex;
+            justify-content: space-between;
+            p{
+                margin: 10px 15px;
+                color: white;
+                font-size: 22px;
+                &:nth-child(2){
+                    font-size: 18px;
+                }
+            }
+        }
+        .diagram__background{
+            overflow: hidden;
+            img{
+                width: 700px;
+                overflow: hidden;
+            }
+        }
+        .ctr{
+          
+           margin-top: 90px;
+           ul{
+            list-style: none;
+            .ctr__list{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 15px;
+                .ctr__list__cont{
+                    color: white;
+                    
+                    img{
+                        margin: 0 15px;
+                    }
+                   
+                }
+                &:nth-child(1){
+                    .ctr__list__cont:nth-child(1){
+                        margin-left: 40px;
+                    }
+                }
+            }
+           }
+           
+        }
+        .utils__diagram{
+            
+            
+            display: flex;
+            justify-content: flex-end;
+           .utils__diag__child{
+               margin: 15px;
+               color: white;
+               display: flex;
+               .utils__cub{
+                   margin: 0 10px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FBCF71;
+                    
+               }
+               &:nth-child(2){
+                   .utils__cub{
+                    background-color: #1F7BB6;
+                   }
+               }
+               &:nth-child(3){
+                .utils__cub{
+                    background-color: #1ABC9C;
+                }
+            }
+           }
+        }
+        .countrys{
+            margin: 0 25px;
+            p{
+                color:white;
+                font-size: 22px;
+                margin: 15px 0;
+                text-align: right;
+            }
+            ol{
+                list-style: none;
+                li{
+                color: white;
+                font-size: 17px;
+                display: flex;
+                justify-content: space-between; 
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1250px) {
+    .diagram{
+        .diagram__child:nth-child(2){
+            .diagram__background{
+                p{
+                   text-align: center;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:1150px) {
+    .diagram{
+        .diagram__child:nth-child(2){
+            .diagram__background{
+                p{
+                    margin-left:10px;
+                   text-align: center;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+@media screen  and(max-width:1000px) { 
+    .diagram{
+        flex-direction: column;
+        .diagram__child{
+            width: 100%;
+    
+            &:nth-child(2){
+                width: 100%;
+                .diagram__background{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 250px;
+                    }
+                    p{
+                        font-size: 60px;
+                        margin-left: 25px;
+                    }
+                }
+            }
+            &:nth-child(3){
+                width: 100%;
+                .diagram__background{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 350px;
+                        
+                    }
+                }
+            }
+        }
+       
+    }
+}
+@media screen and(max-width:450px) {
+    .diagram{
+        .diagram__child{
+        &:nth-child(3){
+            .diagram__background{
+                img{
+                    margin-left: 10px;
+                }
+            }
+           
+       
+        }
+        }}
+}
+@media screen and(max-width:360px) {
+    .diagram{
+        .diagram__child{
+    
+            &:nth-child(2){
+                width: 100%;
+                .diagram__background{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        margin-left: 10px;
+                        width: 200px;
+                    }
+                    p{
+                        font-size: 40px;
+                        margin-left: 5px;
+                    }
+                }
+            }}}
+}

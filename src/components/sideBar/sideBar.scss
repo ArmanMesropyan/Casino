@@ -1,0 +1,105 @@
+.sideBar__long{
+    width: 400px;
+    background-color: rgb(36,39,44);
+}
+.sideBar{
+    width: 70px;
+    background-color: #171717;
+}
+.sideBar , .sideBar__long{
+    
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    
+    .arrowLeft{
+        position: absolute;
+        background-color: #171717;
+        border-radius: 0 10px 10px 0;
+        padding: 15px 8px;
+        left: 70px;
+        top: 10%;
+        cursor: pointer;
+    }
+    .arrowRight{
+        position: absolute;
+        background-color: #171717;
+        border-radius: 0 10px 10px 0;
+        padding: 15px 8px;
+        left: 400px;
+        top: 10%;
+        cursor: pointer;
+    }
+    .logo__sid{
+        display: flex;
+       
+        img{
+            width: 100%;
+        }
+        
+    }
+    .logo__sid__long{
+        display: flex;
+        width: 99%;
+        background-color: black;
+        p{
+            color: white;
+            font-size:24px;
+            padding: 20px 0;
+            margin-top: 10px;
+            margin-left: 90px;
+        }
+       
+    }
+    .content__sid{
+        width: 100%;
+        ul{
+            
+            li{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+                border: 1px solid rgba(255, 255, 255, 0.048);
+                width: 98%;
+                padding: 13px 0;
+                img{
+                  margin: 0 25px;
+
+                }
+                &:hover{
+                    color: lime;
+                    transition: 0.5s ease;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width:440px) {
+    .sideBar__long{
+        width: 280px;
+        .arrowRight{
+            left: 280px;
+            top: 10%;
+           
+        }
+    }
+}
+@media screen and (max-width:320px) {
+    .sideBar__long{
+        width: 200px;
+        .logo__sid__long{
+            p{
+                margin-left: 20px;
+            }
+           
+        }
+        .arrowRight{
+            left: 200px;
+            top: 10%;
+           
+        }
+    }
+}

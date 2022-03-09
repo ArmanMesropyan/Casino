@@ -1,0 +1,39 @@
+.content__foot{
+    display: grid;
+    grid-template-areas: "one two three";
+    
+    .content__title__foot{
+       
+        background-color: #353535;
+        color: white;
+        font-size: 21px;
+        padding: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.212);
+    }
+    .cont_users__M:nth-child(1){
+        grid-area: one;
+    }
+    .cont_users__M:nth-child(2){
+        grid-area: two;
+    }
+    .cont_users__M:nth-child(3){
+        grid-area: three;
+    }
+}
+@media screen and (max-width:1300px) {
+ 
+    .content__foot{
+        grid-template-areas: 
+        "one two "
+        "three three";
+    }    
+}
+@media screen and (max-width:865px) {
+ 
+    .content__foot{
+        grid-template-areas: 
+        "one one "
+        "two two"
+        "three three";
+    }    
+}

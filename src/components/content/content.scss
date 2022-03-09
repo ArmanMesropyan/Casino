@@ -1,0 +1,177 @@
+.diagram{
+    width: 100%;    
+    background-color: #171717;
+    padding: 10px 0;
+    .diagram__title{
+        width: 100%;
+        display: grid;
+        margin: 15px 0;
+        grid-template-columns: 2fr 1fr 2fr;
+        .di__child{
+            color: white;
+            margin: 20px  15px;
+        }
+       .di__child:nth-child(1){
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           .dch__text:nth-child(1){
+               font-size: 25px;
+              
+           }
+           .dch__text:nth-child(2){
+            font-size: 18px;
+        }
+       } 
+
+       .di__child:nth-child(2){
+        display: flex;
+       
+        align-items: center;
+        .dch__text:nth-child(1){
+            font-size: 25px;
+            margin-left: 45px;
+           
+        }}
+
+
+       .di__child:nth-child(3){
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .dch__text:nth-child(1){
+            font-size: 25px;
+            margin-left: 45px;
+           
+        }
+    }
+    }
+    .diagram__child{
+        width: 100%;
+        position: relative;
+        .diagram__img{
+            margin-left: 10px;
+            width: 99%;
+            height: 100%;
+        }
+        .pie__img{
+            position: absolute;
+            top: 17%;
+            width: 200px;
+            left: 48%;
+        }
+        .active__medias{
+            position: absolute;
+            top: 5%;
+            left: 46%;
+            color: #DDDDDD;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',;
+            font-size: 28px;
+        }
+        .earth__img{
+            position: absolute;
+            top: 17%;
+            width: 300px;
+            left: 73%;
+        }
+        .earth__title{
+            position: absolute;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',;
+            top: 5%;
+            font-size: 25px;
+            color: #DDDDDD;
+            left: 70%;
+        }
+        .earth__blocks{
+            .earth__cubs{
+                position: absolute;
+                top: 15%;
+                left: 68%;
+                width: 22px;
+                height: 22px;
+                background-color: #878686;
+                &:nth-child(2){
+                    top: 23%;
+                }
+            }
+        }
+        .countrys{
+            position: absolute;
+            top: 80%;
+            left: 70%;
+            
+           
+            li{
+                width: 350px;
+                margin: 5px 0;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
+        .number{
+            font-size: 55px;
+            color: white;
+            position: absolute;
+            top: 32%;
+            left: 53.2%;
+            font-weight: bold;
+        }
+        .ctr{
+            position: absolute;
+            top: 78%;
+            left: 48%;
+            width: 200px;
+            
+            ul{
+                list-style: none;
+                .ctr__list{ 
+                    color: white;
+                    display: flex;
+                    margin: 5px 0;
+                    justify-content: space-between;
+                    img{
+                        margin-left: -20px;
+                        margin-right: 10px;
+                    }
+                }
+               
+                
+            }
+        }
+        .utils__diagram{
+            margin-top: -30px;
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+           .utils__diag__child{
+               margin: 0 25px;
+               color:white;
+               position: relative;
+               .utils__cub{
+                   position: absolute;
+                   width: 13px;
+                   height: 13px;
+                   top: 3px;
+                   left: -20px;
+                  background-color: #FBCF71;
+               }
+               &:nth-child(2){
+                   .utils__cub{
+                    background-color: #1F7BB6;
+                   }
+                   
+               }
+               &:nth-child(3){
+                .utils__cub{
+                 background-color: #1ABC9C;
+                }
+                
+            }
+              
+           }
+        }
+    }
+    
+}

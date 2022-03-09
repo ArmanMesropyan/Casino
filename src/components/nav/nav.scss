@@ -1,0 +1,34 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 60px;
+    .nav__child{
+        padding: 25px 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .nav__child:nth-child(1){
+        color: #6E6E6E;
+    }
+    .nav__child:nth-child(2){
+        height: 100%;
+        background-color:#D8D8D8 ;
+        color: #878787;
+        img{
+            margin: 0 10px;
+        }
+    }
+    
+}
+@media screen and(max-width:520px) {
+    .nav{
+        flex-direction: column;
+        .nav__child{
+            font-size: 15px;
+            padding: 30px;
+            box-sizing: content-box;
+        }
+    }
+}
